@@ -1,9 +1,9 @@
 <?php
 
-namespace shanto\acl\Services;
+namespace Shanto\Acl\Services;
 
-use shanto\acl\Models\Permission;
-use shanto\acl\Models\UserRole;
+use Shanto\Acl\Models\Permission;
+use Shanto\Acl\Models\UserRole;
 use Auth;
 use Illuminate\Support\Arr;
 

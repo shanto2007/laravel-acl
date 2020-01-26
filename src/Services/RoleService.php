@@ -1,8 +1,8 @@
 <?php
-namespace shanto\acl\Services;
+namespace Shanto\Acl\Services;
 
-use shanto\acl\Models\Role;
-use shanto\acl\Models\Permission;
+use Shanto\Acl\Models\Role;
+use Shanto\Acl\Models\Permission;
 use Validator;
 /**
  * Description of RoleService

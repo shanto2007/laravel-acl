@@ -13,7 +13,7 @@ if (! function_exists('has_access')) {
      * </code>
      */
     function has_access($action, $isActionFullPath=false){
-        return shanto\acl\Services\PermissionCheckService::hasAccess($action, $isActionFullPath);
+        return Shanto\Acl\Services\PermissionCheckService::hasAccess($action, $isActionFullPath);
     }
 }
 
@@ -30,7 +30,7 @@ if (! function_exists('has_group_access')) {
      * </code>
      */
     function has_group_access($group){    
-        return shanto\acl\Services\PermissionCheckService::hasGroupAccess($group);
+        return Shanto\Acl\Services\PermissionCheckService::hasGroupAccess($group);
     }
 }
 

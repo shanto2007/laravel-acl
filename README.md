@@ -12,7 +12,7 @@ composer require shanto/acl
 In your laravel config/app.php under providers add 
 
 ```php
-shanto\acl\AclServiceProvider::class
+Shanto\Acl\AclServiceProvider::class
 ```
 ### publish
 ```
@@ -37,7 +37,7 @@ NOTE: If you see any kind of class not found type error try running `composer du
 This library comes with an artisan command `acl:resource` to automatically create all the resources (_controller@action_) available in your project under `app/Http/Controllers` directory. To activate this command you need to add these following lines to your `app/Console/Kernel.php` file. 
 ```php
 protected $commands = [
-    shanto\acl\Commands\AclResource::class
+    Shanto\Acl\Commands\AclResource::class
 ];
 
 ```
@@ -64,8 +64,8 @@ This ACL library comes with two middleware as shown below. `AuthenticateWithAcl`
 
 In your `kernal.php` file add this lines
 ```php
-'auth.acl' => \shanto\acl\Middleware\AuthenticateWithAcl::class,        
-'resource.maker' => \shanto\acl\Middleware\ResourceMaker::class,
+'auth.acl' => \Shanto\Acl\Middleware\AuthenticateWithAcl::class,        
+'resource.maker' => \Shanto\Acl\Middleware\ResourceMaker::class,
 ```
 In your `route/web.php` file add this lines
 ```php

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use shanto\acl\Models\UserRole;
+use Shanto\Acl\Models\UserRole;
 
 class UserRoleTableSeeder extends Seeder {
 

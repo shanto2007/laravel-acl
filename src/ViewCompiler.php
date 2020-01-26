@@ -1,5 +1,5 @@
 <?php
-namespace shanto\acl;
+namespace Shanto\Acl;
 
 trait ViewCompiler {
 

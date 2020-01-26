@@ -1,12 +1,12 @@
 <?php
 
-namespace shanto\acl\Middleware;
+namespace Shanto\Acl\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Factory as Auth;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use shanto\acl\Services\PermissionCheckService;
+use Shanto\Acl\Services\PermissionCheckService;
 use Route;
 
 class AuthenticateWithAcl {

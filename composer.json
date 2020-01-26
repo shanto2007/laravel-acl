@@ -1,5 +1,5 @@
 {
-    "name": "shanto/acl",
+    "name": "Shanto/Acl",
     "description": "Dynamically configurable access control management for laravel applications",
     "keywords": ["laravel", "acl", "dynamic role and permission"],
     "type": "library",

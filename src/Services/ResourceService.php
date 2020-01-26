@@ -6,9 +6,9 @@
  * and open the template in the editor.
  */
 
-namespace shanto\acl\Services;
+namespace Shanto\Acl\Services;
 
-use shanto\acl\Models\Resource;
+use Shanto\Acl\Models\Resource;
 use Validator;
 
 /**
