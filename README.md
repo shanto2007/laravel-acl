@@ -12,7 +12,7 @@ composer require shanto/acl
 In your laravel config/app.php under providers add 
 
 ```php
-Shanto\Acl\AclServiceProvider::class
+\Shanto\Acl\AclServiceProvider::class
 ```
 ### publish
 ```
