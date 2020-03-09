@@ -10,7 +10,7 @@ class UserRoleTableSeeder extends Seeder {
      *
      * @return void
      */
-    public function run() {        
+    public function run() {
         UserRole::create(['user_id'=>1, 'role_id'=>1]);
         UserRole::create(['user_id'=>2, 'role_id'=>1]);
         UserRole::create(['user_id'=>2, 'role_id'=>2]);

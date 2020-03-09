@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Shanto
- * Date: 26/01/2020
- * Time: 1:24 PM
- */
 
 namespace Shanto\Acl\Services;
 

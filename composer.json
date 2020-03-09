@@ -11,7 +11,10 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php": ">=7.2.0",
+        "laravel/framework": ">=6.0.0"
+    },
     "autoload": {
         "files": [
             "src/helpers.php"

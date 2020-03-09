@@ -10,10 +10,10 @@ use Illuminate\Support\Arr;
 /**
  * Description of PermissionCheckService
  *
- * @author Shanto Kumar Sarker <sk.bd2007@gmail.com>shanto
+ * @author Shanto Kumar Sarker <sk.bd2007@gmail.com>Shanto
  */
 class PermissionCheckService {
-        
+
     private static $_roles=null;
     private static $_resources = [];
     private static $_permission_rows = [];

@@ -34,7 +34,8 @@ class ResourceMaker {
         $action = $this->route->getActionName();
         $resource_id = sha1($action, false);
         $controller = $this->_getControllerName($action);
-        $name = $request->getMethod().'::'.$this->_getActionName($action);
+        $name = $this->_getActionName($action);
+//        $name = $request->getMethod().'::'.$this->_getActionName($action);
 
         if ($controller) {
             $resource = Resource::find($resource_id);
@@ -84,9 +85,20 @@ class ResourceMaker {
     private function _getActionName($action) {
         $pattern = '/([a-zA-Z]+)$/';
         preg_match($pattern, $action, $matches);
-        
+
         if (count($matches) == 2) {
-            return ucfirst($matches[1]);
+//            return ucfirst($matches[1]);
+            if (count($matches) == 2) {
+                $name = ucfirst($matches[1]);
+                if ($name == 'Index') {
+                    $name = 'List';
+                } else if ($name = 'Destroy') {
+                    $name = 'DELETE';
+                } else if ($name == 'Store') {
+                    $name = 'Save';
+                }
+                return $name;
+            }
         }
 
         return '';

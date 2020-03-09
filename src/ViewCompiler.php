@@ -4,7 +4,8 @@ namespace Shanto\Acl;
 trait ViewCompiler {
 
     /**
-     * @author shanto
+     * @author Shanto
+     * Check parser nullable string
      */
     private static function _nullsafeParser($str, $pre = '') {
         $head = substr($str, 0, strpos($str, '->'));

@@ -14,7 +14,7 @@ use Validator;
 /**
  * Description of ResourceService
  *
- * @author Shanto Kumar Sarker <sk.bd2007@gmail.com>shanto
+ * @author Shanto Kumar Sarker <sk.bd2007@gmail.com>Shanto
  */
 class ResourceService {
     /**
@@ -29,16 +29,16 @@ class ResourceService {
         }else{
             $action = 'required|max:90|unique:resources';
         }
-        
+
         return Validator::make($data, [
             'name' => 'required|max:60',
             'controller' => 'required|max:60',
             'action' => $action,
         ]);
     }
-    
+
     /**
-     * 
+     *
      * @param array $data
      * @return Resource
      */

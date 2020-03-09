@@ -42,10 +42,10 @@ class AuthenticateWithAcl {
             }
         }
         if(!PermissionCheckService::canAccess(Route::currentRouteAction(), $this->auth->user())){
-            return new Response('Forbidden', 403);
+            return redirect('permisson/error');
         }
-                        
+
         return $next($request);
     }
-    
+
 }
